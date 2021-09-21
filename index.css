@@ -1,12 +1,20 @@
 body {
+    margin: 0px;
+}
+.body {
     background-image: url("images/dark-green-texture\ r.jpg");
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    align-items: center;
+    margin: 0px;
 }
 .caluculator {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    min-width: 750px;
+    
 }
 .bg-container{
 	background-color: rgba(8, 32, 17, 0.1);
@@ -88,11 +96,18 @@ ul {
     font-size: 18px;
 
 }
-@media (min-width:200px) and (max-width:765px) {
+@media (min-width:768px) {
+    .body {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        background-attachment: fixed;
+        height: 100vh;
+    }
     .caluculator {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
-
+        min-width: 768px;
     }
 }
