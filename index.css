@@ -20,7 +20,7 @@ body {
 	background-color: rgba(8, 32, 17, 0.1);
 	margin: 50px;
 	width: 350px;
-	height: 90vh;
+	height: 90vhw;
 	margin: 0 auto;		
 	border-radius: 10px;
 }
@@ -85,7 +85,8 @@ ul {
     margin: 10px;
     margin-left: 10px;
     padding: 0px;
-    height: 75vh;
+    min-height: 10vh;
+    max-height: 68vh;
 }
 .eachHistory {
     background-color: rgba(8, 32, 17, 0.1);
@@ -95,6 +96,11 @@ ul {
     padding: 10px;
     font-size: 18px;
 
+}
+.paragraph {
+    color: darkgoldenrod;
+    text-align: center;
+    padding-bottom: 5px;
 }
 @media (min-width:768px) {
     .body {

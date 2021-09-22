@@ -38,6 +38,7 @@ function equalTo(){
 	num.push(ans.toString()); //adding the result to the array "num"
 }
 // When user presses "AC", function "clearScr()" is called
+
 function clearScr(){
 	document.getElementById('screen').innerHTML = '';
 	while(num.length > 0){
@@ -45,12 +46,23 @@ function clearScr(){
 	}
 	a ='';
 
-    length = 0
-    
-    $('#ulList').empty();
-
-
 }
+
+function emptyList() {
+	length = 0
+	$('#ulList').empty();
+}
+
+$(document).ready(function() {
+	$("#ac").click(function() {
+		clearScr()
+	})
+
+	$("#ac").dblclick(function() {
+		emptyList()
+	})
+})
+
 let ulEl = document.getElementById("ulList");
 
 
